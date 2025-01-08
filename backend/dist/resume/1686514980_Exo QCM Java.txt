@@ -1,0 +1,31 @@
+public class Point {
+    
+    private int abscisseOrigine = 0; 
+    private int abscisse;
+    
+    public Point (int _abscisse){
+        this.abscisse = _abscisse;
+    }
+    
+    public void affiche(char a){
+        System.out.println("Point "+ a + " - abscisse = " +  (this.abscisse - this.abscisseOrigine));
+        System.out.println("abscisse " + a + " relative à une origine d'abscisse " +  this.abscisseOrigine );
+    }
+    public void setOrigine(int _abscisseOrigine){
+        this.abscisseOrigine = _abscisseOrigine;
+    }
+    public int getOrigine(){
+    return this.abscisseOrigine;
+    }
+}
+
+    public static void main(String[] args) {
+          Point a = new Point(3);
+          a.affiche('a');
+          Point b = new Point(12);
+          b.affiche('b');
+          a.setOrigine(3);
+          a.affiche('a');
+          b.setOrigine(3);
+          b.affiche('b');
+    }
