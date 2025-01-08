@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.Link:hover{
+  background: lightyellow;
+  color: black;
+  transition: all 0.5s;
+}
+
+a{
+text-decoration: none;
+}
+
+/*popup*/
+.fpopup {
+  display: flex;
+  border: none;
+  position: absolute; /* Position absolue pour se superposer au tableau */
+  right: 30%;
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transform: translate(-50% ,-50% );
+  transform: translate(-50% ,-50% );
+  background-color: white; /* Fond semi-transparent */
+  align-items: center;
+  justify-content: center;
+  
+  
+}
